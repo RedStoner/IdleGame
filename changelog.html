@@ -1,0 +1,254 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="stylesheet" type="text/css" href="layout.css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+</head>
+<body>
+<div id='changelog'>
+  <h1>Changelog</h1>
+  <ul>
+    <!--
+    <li>0.0.0 11/0/2017
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+     -->
+    <li>0.5.9 11/6/2017
+      <ul>
+        <li>Moved population info from 'main' to 'Resource Info'</li>
+        <li>Better calculations for income/unmet values</li>
+        <li></li>
+      </ul>
+    </li>
+    <li>0.5.8 11/5/2017
+      <ul>
+        <li>Modified research page to remove empty space between lists.</li>
+        <li>Implemented percentages into suppliers.</li>
+      </ul>
+    <li>0.5.7 11/4/2017
+      <ul>
+        <li>Added priorities window
+          <ul>
+            <li>Buildings higher in the list (lower number) will be supplied with materials first.</li>
+            <li>Building priorities are now saved</li>
+          </ul>
+        </li>
+        <li>Added percentage inputs to priorities window, though this value does nothing yet to production.</li>
+      </ul>
+    </li>
+    <li>0.5.6 11/3/2017
+      <ul>
+        <li>Fixed building info screen to not show consume materials for producers</li>
+        <li>Fixed canceling a research didnt clear current points.</li>
+        <li>Added info on building stats to show research bonuses applied to it.</li>
+        <li>Added more consume information on building stats </li>
+        <li>Fixed buildings with a bonus consumed their bonus materials when production was 0</li>
+        <li></li>
+      </ul>
+    </li>
+    <li>0.5.5 10/31/2017
+      <ul>
+        <li>Fixed demand on buildings with bonuses demanding too much materials.</li>
+        <li>Increased scaling for infinite upgrades from 1.15 to 1.75, to make them more expensive</li>
+        <li>Increased value of building supplies to 1.5 so they become more profitable than tools once you can supply steel to them.</li>
+        <li>Decreased population demands a bit to require more farm expansion a bit later game</li>
+      </ul>
+    </li>
+    <li>0.5.4 10/30/2017
+      <ul>
+        <li>Added research to increase the amount of money gained when clicking the "click me" button.</li>
+        <li>Moved sections in research around to make things look a bit better.</li>
+        <li>Reformatted resource info page to be a table. Fixes when text rolls over, rows become misaligned.</li>
+        <li>Changed building buttons to have a buy button and an info button</li>
+        <li>Building info button shows basic stats of the building for now.</li>
+        <li>Noticed the Lumbermill had a really high wood requirement(50). Dropped it to 30.</li>
+        <li>Moved the "click me for money" button to the main bar, as well, it was renamed to "$$Clicker$$</li>
+      </ul>
+    </li>
+    <li>0.5.3 10/29/2017
+      <ul>
+        <li>Added production upgrades for all the buildings.</li>
+        <li>Added Title to the page which includes version running.</li>
+        <li>Changed priority of the research lab to be higher than other buildings so you dont have to over produce resources to complete research.</li>
+        <li>Added Sell Price researches for all resources demanded by the population.</li>
+        <li>Removed research points as a demand from the population.</li>
+        <li>Changed all instances of "/sec" to "/tick" to account for tick speed research.</li>
+      </ul>
+    </li>
+    <li>0.5.2 10/28/2017 
+      <ul>
+        <li>Aligned Building buttons with Window buttons to allow for different spacing on Info pane. (not sure i like it yet)</li>
+        <li>Added new research type: Bonuses
+          <ul>
+            <li>Production Bonus: Adds to the base amount of resources the building produces. Bonuses are applied to this new value.</li>
+            <li>Sell Bonus: Adds to the price the population buys this resource</li>
+            <li>Cost Reduction: Reduces the price to purchase this building. </li>
+          </ul>
+        </li>
+        <li>Bonus researches can be infinite, and scale in price each time you research it.</li>
+        <li>Currently only have iron and oil implemented for production.</li>
+        <li>Changed number formating to show 3 decimal places instead of 2</li>
+        <li>Fixed science lab to consume plastic instead of steel as a bonus resource. </li>
+      </ul>
+    </li>
+    <li>0.5.1 10/27/2017
+      <ul>
+        <li>Fixed research screen not updating researches when the current research finishes.</li>
+        <li>Fixed secondary output researches not showing up.</li>
+        <li>Changed buttons on research screen to say what they are going to do instead of generic "Research/Queue"</li>
+        <li>Fixed that buildings with a bonus were not demanding full amount with bonuses included</li>
+        <li>Increased height of Logo area and Info Pane to allow for text rollover in bigger research names.</li>
+        <li>Added number formatting to building buy costs.</li>
+        <li>Increased number formating range from septillion(10^24) to octovigintillion(10^87)</li>
+        <li>Reworked population growth to be not so "climb to peak" then drop instantly</li>
+        <li>Added Tick Rate 1 Research unlocked at steel. Currently halves tick time to .5 seconds. Each future will cut tick time in half(ie: 2.5, 1.75, .....)</li>
+      </ul>
+    </li>
+    <li>0.5.0 10/25/2017 - The Research Era Begins
+      <ul>
+        <li>!!!!First Major Breaking Build!!!!
+          <ul>
+            <li>You will likely see a major drop in production untill researches are unlocked.</li>
+            <li>Debug Money is Off currently, now is a good time to start a new game if preffered.</li>
+          </ul>
+        </li>
+        <li>Secondary outputs from producers are now locked behind research.</li>
+        <li>Research window has been setup to show available researches.</li>
+        <li>Info Pane now shows current research and research queued up(if unlocked)</li>
+        <li>All buildings that will be locked behind research have been locked behind research (They will still produce if you purchased them prior!)</li>
+        <li>Changed vertical scaling of windows to better fit higher resolutions. </li>
+        <li>Fixed font sizes to use points instead of pixels.</li>
+        <li>Renamed "sellers" button to "Suppliers"</li>
+        <li>Border between buildings list and the info window was moved slightly to fit renamed button</li>
+      </ul>
+    </li>
+    <li>0.4.5 10/21/2017
+      <ul>
+        <li>Changed Research labs so they only demand when a research is being worked on.</li>
+        <li>More background stuff on research. Almost there!</li>
+      </ul>
+    </li>
+    <li>0.4.4 10/12/2017 - The Pre Research Era
+      <ul>
+        <li>Added ability to lock buildings behind research</li>
+        <li>Currently locked buildings can be unlocked in research screen for free</li>
+        <li>Not saving unlocked buildings yet, until research is more implemented.</li>
+      </ul>
+    </li>
+    <li>0.4.3 10/11/2017
+      <ul>
+        <li>Calculation fix for red building consumptions</li>
+        <li>Made main screen update values on building purchase and population growth</li>
+      </ul>
+    </li>
+    <li>0.4.2 10/10/2017
+      <ul>
+        <li>Removed underscore from resource names that are shown</li>
+        <li>Added a bit of space between resources produced on building buttons.</li>
+        <li>Started backend for research stuff</li>
+      </ul>
+    </li>
+    <li>0.4.1 10/9/2017
+      <ul>
+        <li>Changed main window to show demand and income from population</li>
+        <li>Buildings renamed internally for easier referencing when implementing upcoming research.</li>
+        <li>Building Cost Balance for initial startup</li>
+        <li>Chaged some required/bonus materials for refiner/seller</li>
+        <li>Updated Flow Chart to reflect changes made.</li>
+        <li>Flow Chart now shows secondary output flow individually</li>
+        <li>Now saving the amount of excess food between loads</li>
+        <li>Added a custom Font. Feedback is appreciated.</li>
+        <li>Reworked Suppy Demand Calculations
+          <ul>
+              <li>Production is now calculated based upon demand</li>
+              <li>Only Food can be over-produced to allow for population growth</li>
+              <li>Green Buildings will try to consume all the bonus materials possible before consuming base materials.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>0.4.0 9/26/2017 - The Population Update
+      <ul>
+        <li>Calculation fixes</li>
+        <li>Started reworking resource demand/supply to work better.</li>
+        <li>Added Population
+          <ul>
+              <li>Population controls the demand of consumer resources</li>
+              <li>Population grows when there is excess food being produces</li>
+              <li>Currently cannot go down.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>0.3.0 9/23/2017 - The Info Update
+      <ul>
+        <li>Added new resource supply screen</li>
+        <li>Added flow chart for resource flow.</li>
+      </ul>
+    </li>
+    <li>0.2.1 9/20/2017
+      <ul>
+        <li>Added Data verification for loading from save file.</li>
+        <li>Added new building during testing of new save data loading.</li>
+        <li>New game button has confirmation</li>
+        <li>Added navigation buttons to buildings for future plans</li>
+        <li>Started reformating building structure
+            <ul>
+                <li>Info for building type</li>
+                <li>Info for material type it produces</li>
+                <li>Info for material type it consumes</li>
+                <li>Info for rate it consumes that material</li>
+            </ul>
+        </li>
+        <li></li>
+      </ul>
+    </li>
+    <li>0.2.0 9/19/2017 - The Save Update
+      <ul>
+        <li>Added save capabilities
+          <ul>
+            <li>No Version/Data Checking/Verification yet</li> 
+            <li>Only saves on window close event.
+              <ul>
+                <li> Saves your harddrive from constant writes.</li>
+                <li> Havn't tested on crash situations yet. </li>
+                <li> May make timed saved loop every x seconds for those long nights!</li>
+              </ul>
+            </li> 
+          </ul>
+        </li>
+        <li>Added Main Window button the menu bar</li>
+        <li>Added changelog button the menu bar</li>
+        <li>Added Research button the menu bar</li>
+        <li>Added About button the menu bar</li>
+        <li>Added New Game button the menu bar</li>
+        <li>Added cost scaling on buildings</li>
+        <li>Added number formating for really big numbers</li>
+        <li>moved player data out of building data</li>
+      </ul>
+    </li>
+    <li>0.1.1 9/18/2017
+      <ul>
+        <li>More Layout organizing</li>
+        <li>Implemented many core functions
+          <ul>
+            <li> Buying buildings</li> 
+            <li> Income Loop</li> 
+            <li> Research Points</li> 
+            <li> A button to click to earn some money.</li> 
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>0.1.0 9/17/2017
+      <ul>
+        <li>Intial Layout</li>
+        <li>Some inner workings</li>
+      </ul>
+    </li>
+  </ul>
+  </div>
+</body>
+</html>

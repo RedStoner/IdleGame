@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	color: white;
+  font-size: 15px;
+  background-color: #000000;
+}
+#topBuildingInfo {
+	width: 99%;
+	height: 52px;
+	margin: 0px 0px 0px 0px;
+	border: thin solid;
+	border-color: #00F;
+  overflow: auto;
+
+}
+#leftBuildingInfo {
+	width: 49%;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border: thin solid;
+	border-color: #00F;
+  position: absolute;
+}
+#rightBuildingInfo {
+	width: 49%;
+	float: right;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border: thin solid;
+	border-color: #00F;
+}
+.leftAlign{
+  position: absolute;
+	width: 49%;
+	float: left;
+  text-align: left;
+	border: thin solid;
+	border-color: #0F0;
+}
+.rightAlign{
+	width: 49%;
+	float: right;
+  text-align: right;
+	border: thin solid;
+	border-color: #0f0;
+}
+button{
+  height: 50px;
+}
